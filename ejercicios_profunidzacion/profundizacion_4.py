@@ -65,3 +65,37 @@ Alumno:
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+while True:
+    print('Ingrese el numero de la operacion que desea realizar:'
+    '\n- 1- Suma (+)'
+    '\n- 2- Resta (-)'
+    '\n- 3- Multiplicación (*)'
+    '\n- 4- División (/)'
+    '\n- 5- SALIR')
+    while True:
+        operacion = str(input('Numero de operacion:'))
+        if operacion == '1' or operacion == '2' or operacion == '3' or operacion == '4' or operacion == '5':
+            break
+        else:
+            print('Debe elegir un numero del 1 al 5.')
+
+    if operacion == '5':
+        print('Gracias por usar mi calculadora.')
+        break
+      
+    numero_1 = float(input('Elija su primer numero decimal:'))
+    numero_2 = float(input('Elija su segundo numero decimal:'))
+
+    if operacion == '1':
+        resultado = numero_1 + numero_2
+        print(f'El resultado de la suma es: {resultado}')
+    elif operacion == '2':
+        resultado = numero_1 - numero_2
+        print(f'El resultado de la resta es: {resultado}')
+    elif operacion == '3':
+        resultado = numero_1 * numero_2
+        print(f'El resultado de la multiplicacion es: {resultado}')
+    elif operacion == '4':
+        resultado = numero_1 / numero_2
+        print(f'El resultado de la division es: {resultado}')

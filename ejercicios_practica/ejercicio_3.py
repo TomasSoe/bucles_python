@@ -27,7 +27,11 @@
 # Utilice el debugger para ver como avanza
 # el programa paso a paso
 numeros = [1, 5, -1, 6, 10, 2, -5]
-
+suma_total = 0
 
 # Imprimir en pantalla la variable suma_total
 # El resultado final de la suma deberá ser 18
+
+for numero in numeros:
+    suma_total += numero
+print(f'El resultado final es {suma_total}')

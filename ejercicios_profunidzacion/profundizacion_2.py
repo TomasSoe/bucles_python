@@ -50,3 +50,13 @@ Alumno:
 print("Mi organizador académico (#_#)")
 # Empezar aquí la resolución del ejercicio
 notas = [70, 82, -1, 65, 55, 67, 87, 92, -1]
+cantidad_examanes = 0
+cantidad_ausentes = 0
+
+for nota in notas:
+    if nota >= 0:
+        cantidad_examanes += 1
+    else:
+      cantidad_ausentes += 1
+
+print(f'El alumno se presento a {cantidad_examanes} examenes y falto a {cantidad_ausentes} examenes.')

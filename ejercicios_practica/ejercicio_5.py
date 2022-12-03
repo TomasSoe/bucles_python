@@ -29,7 +29,12 @@
 # el programa paso a paso
 temperaturas = [12.8, 18.6, 14.5, 27.8, 12.1, 26.2, 13.5, 18.6,
                   14.7, 19.6, 21.2, 31.4]
-
+mayores_25 = 0
 
 # Imprimir en pantalla la variable mayores_25
 # La cantidad de temperaturas mayores a 25 deberá ser 3
+
+for temperatura in temperaturas:
+    if temperatura > 25:
+        mayores_25 += 1
+print(f'La cantidad de temperaturas mayores a 25 es de: {mayores_25}')
